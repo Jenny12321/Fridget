@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/editText_name"
+        android:textColor="@android:color/black"
+        android:layout_alignBaseline="@+id/textView7"
+        android:layout_alignBottom="@+id/textView7"
+        android:layout_toRightOf="@+id/tv_name"
+        android:layout_toEndOf="@+id/tv_name"
+        android:textSize="20sp"
+        android:backgroundTint="@android:color/darker_gray" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:text="Name:"
+        android:layout_marginTop="64dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginStart="26dp"
+        android:textSize="24sp"
+        android:fontFamily="sans-serif"
+        android:id="@+id/textView7"
+        android:longClickable="true"
+        android:paddingEnd="0dp"
+        android:paddingBottom="0dp"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:paddingStart="0dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor = "#000000"
+        android:text="Quantity:"
+        android:textSize="24sp"
+        android:fontFamily="sans-serif"
+        android:id="@+id/tv_name"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/editText_name"
+        android:layout_alignLeft="@+id/textView7"
+        android:layout_alignStart="@+id/textView7" />
+
+    <EditText
+        android:layout_width="?android:attr/listPreferredItemHeight"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/editText_expYear"
+        android:layout_alignBaseline="@+id/editText_expMonth"
+        android:layout_alignBottom="@+id/editText_expMonth"
+        android:layout_alignLeft="@+id/btn_submit"
+        android:layout_alignStart="@+id/btn_submit"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="11dp"
+        android:textColor="@android:color/black"
+        android:backgroundTint="@android:color/darker_gray" />
+
+    <EditText
+        android:layout_width="?android:attr/listPreferredItemHeight"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:id="@+id/editText_expMonth"
+        android:layout_alignBottom="@+id/editText_expDay"
+        android:layout_toEndOf="@+id/textView9"
+        android:layout_alignLeft="@+id/radioGroup7"
+        android:layout_alignStart="@+id/radioGroup7"
+        android:textColor="@android:color/black"
+        android:backgroundTint="@android:color/darker_gray" />
+
+    <TextView
+        android:text="Day/Month/Year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView11"
+        android:textColor="@android:color/black"
+        android:layout_alignBaseline="@+id/textView9"
+        android:layout_alignBottom="@+id/textView9"
+        android:layout_toLeftOf="@+id/editText_expYear"
+        android:layout_toStartOf="@+id/editText_expYear" />
+
+    <TextView
+        android:text="/"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView14"
+        android:textColor="@android:color/black"
+        android:textSize="50sp"
+        android:layout_above="@+id/textView8"
+        android:layout_alignRight="@+id/tv_name"
+        android:layout_alignEnd="@+id/tv_name" />
+
+    <TextView
+        android:text="/"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView13"
+        android:textColor="@android:color/black"
+        android:textSize="50sp"
+        android:layout_marginRight="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_alignBottom="@+id/editText_expMonth"
+        android:layout_toLeftOf="@+id/editText_expYear"
+        android:layout_toStartOf="@+id/editText_expYear" />
+
+    <EditText
+        android:layout_width="?android:attr/listPreferredItemHeight"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:id="@+id/editText_expDay"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:backgroundTint="@android:color/darker_gray"
+        android:layout_marginTop="62dp"
+        android:layout_below="@+id/textView9"
+        android:layout_alignLeft="@+id/textView8"
+        android:layout_alignStart="@+id/textView8" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:text="Expiry Date:"
+        android:textSize="24sp"
+        android:fontFamily="sans-serif"
+        android:id="@+id/textView9"
+        android:layout_marginTop="59dp"
+        android:layout_below="@+id/editText_quant"
+        android:layout_alignLeft="@+id/tv_name"
+        android:layout_alignStart="@+id/tv_name" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:text="Group:"
+        android:textSize="24sp"
+        android:fontFamily="sans-serif"
+        android:id="@+id/textView8"
+        android:layout_marginTop="75dp"
+        android:layout_below="@+id/editText_expDay"
+        android:layout_alignLeft="@+id/textView9"
+        android:layout_alignStart="@+id/textView9" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/editText_quant"
+        android:layout_alignStart="@+id/editText_quant"
+        android:layout_marginBottom="33dp"
+        android:id="@+id/radio_buttons">
+
+        <RadioButton
+            android:text="Grains"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rb_grain"
+            android:textColor="@color/colorPrimary"
+            android:textColorHighlight="@color/colorPrimaryDark"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:textSize="16sp"
+            android:buttonTint="@android:color/black"
+            android:layout_marginTop="34dp"
+            android:layout_below="@+id/textView8"
+            android:layout_alignLeft="@+id/rb_meatAlt"
+            android:layout_alignStart="@+id/rb_meatAlt"
+            android:checked="true"/>
+
+        <RadioButton
+            android:text="Meat/Alternatives"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rb_meatAlt"
+            android:textColor="@color/colorPrimary"
+            android:textColorHighlight="@color/colorPrimaryDark"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:textSize="16sp"
+            android:buttonTint="@android:color/black"
+            android:layout_below="@+id/rb_frVeg"
+            android:layout_alignLeft="@+id/rb_frVeg"
+            android:layout_alignStart="@+id/rb_frVeg"
+            android:checked="true"/>
+
+        <RadioButton
+            android:text="Fruits/Veggies"
+            android:layout_width="wrap_content"
+            android:id="@+id/rb_frVeg"
+            android:textColor="@color/colorPrimary"
+            android:textColorHighlight="@color/colorPrimaryDark"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:textSize="16sp"
+            android:buttonTint="@android:color/black"
+            android:layout_above="@+id/rb_grain"
+            android:layout_toRightOf="@+id/textView9"
+            android:layout_toEndOf="@+id/textView9"
+            android:layout_height="wrap_content"
+            android:checked="true"/>
+
+        <RadioButton
+            android:text="Dairy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rb_dairy"
+            android:textColor="@color/colorPrimary"
+            android:textColorHighlight="@color/colorPrimaryDark"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:textSize="16sp"
+            android:buttonTint="@android:color/black"
+            android:layout_below="@+id/rb_grain"
+            android:layout_alignLeft="@+id/rb_grain"
+            android:layout_alignStart="@+id/rb_grain"
+            android:checked="true"/>
+
+    </RadioGroup>
+
+    <Button
+        android:text="Submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_submit"
+        android:background="@color/colorPrimaryDark"
+        android:layout_above="@+id/editText_name"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="26dp"
+        android:layout_marginEnd="26dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/editText_quant"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:backgroundTint="@android:color/darker_gray"
+        android:layout_alignBaseline="@+id/tv_name"
+        android:layout_alignBottom="@+id/tv_name"
+        android:layout_toRightOf="@+id/textView9"
+        android:layout_toEndOf="@+id/textView9" />
+
+</RelativeLayout>
