@@ -24,7 +24,7 @@ public class Food extends ImageView {
     //age in days
     int age;
 
-    public Food(Context context, String name, int creationDay, int creationMonth, int creationYear, int quantity, String group) {
+    public Food(Context context, String name, int expDay, int expMonth, int expYears, int quantity, String group) {
         super(context);
         this.creationDay = creationDay;
         this.creationMonth = creationMonth;
@@ -35,7 +35,7 @@ public class Food extends ImageView {
         setImage();
     }
 
-    public Food(Context context, String name, int creationDay, int creationMonth, int creationYear, String group) {
+    public Food(Context context, String name, int expDay, int expMonth, int expYears, String group) {
         super(context);
         this.creationDay = creationDay;
         this.creationMonth = creationMonth;
@@ -59,11 +59,11 @@ public class Food extends ImageView {
     }
 
     private void setImage() {
-        switch (name.toLowerCase()) {
+        /*switch (name.toLowerCase()) {
             case "apple":
                 this.setImageResource(R.drawable.apple);
                 break;
-            /*case "tomato":
+            *//*case "tomato":
                 this.setImageResource(R.drawable.tomato);
                 break;
             case "avocado":
@@ -104,12 +104,11 @@ public class Food extends ImageView {
                 break;
             default:
                 this.setImageResource(R.drawable.bowl);
-                break;*/
+                break;*//*
             default:
                 break;
 
-        }
+        }*/
 
     }
 }
-
